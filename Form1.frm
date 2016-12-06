@@ -110,7 +110,6 @@ Private Sub Command1_Click()
         Exit Sub
     End If
     
-    ' The acceptSocket's TaskFinished callback will fire when an incoming connection arrives.
     Set acceptConnTask = acceptSocket.AcceptNextConnectionAsync(0)
     acceptConnTask.Run
     
